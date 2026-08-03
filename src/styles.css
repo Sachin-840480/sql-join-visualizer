@@ -137,3 +137,113 @@ tbody tr:hover{
     font-size:22px;
 }
 
+.animation-box{
+
+    margin-top:40px;
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    animation:fade .4s ease;
+}
+
+.status h2{
+
+    margin-bottom:15px;
+}
+
+.result-message{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+.success{
+
+    color:#22c55e;
+}
+
+.warning{
+
+    color:#f59e0b;
+}
+
+.danger{
+
+    color:#ef4444;
+}
+
+.animation-controls{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+}
+
+.current-row{
+
+    outline:3px solid #3b82f6;
+
+    animation:pulse 1s infinite;
+}
+
+.matched-row{
+
+    background:#15803d !important;
+
+    color:white;
+}
+
+.failed-row{
+
+    background:#991b1b !important;
+
+    color:white;
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+    }
+
+    50%{
+
+        transform:scale(1.03);
+    }
+
+    100%{
+
+        transform:scale(1);
+    }
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
