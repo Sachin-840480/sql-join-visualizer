@@ -37,14 +37,16 @@ export default function App() {
 
         <Table
           title="Salaries"
-          columns={["emp_no", "salary", "from_date"]}
           rows={salaries}
+          columns={["emp_no", "salary", "from_date"]}
+          highlightedRow={currentStep}
         />
 
         <Table
           title="Titles"
           columns={["emp_no", "title", "from_date"]}
-          rows={titles}
+          matchedRow={matchedRow}
+          failedRow={failedRow}
         />
       </div>
 
